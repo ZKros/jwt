@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRouting } from './app.routing';
-import { AppComponent } from './app.component';
-import { HomeModule } from './home/home.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { MaterialModule } from './material.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
 	declarations: [
@@ -13,8 +13,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 	],
 	imports: [
 		BrowserModule,
-		AppRouting,
-		HomeModule,
+		AppRoutingModule,
+		PagesModule,
+		MaterialModule,
 		BrowserAnimationsModule,
 		ReactiveFormsModule
 	],
